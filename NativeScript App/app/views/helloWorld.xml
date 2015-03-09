@@ -1,0 +1,9 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+    <StackLayout>
+        <StackLayout orientation="horizontal">
+            <Label text="Name" />
+            <TextField text="{{ name }}" />
+        </StackLayout>
+        <Label text="{{ name === '' ? message + ' World!' : message + ' ' + name + '!'}}" cssClass="title" />
+    </StackLayout>
+</Page>
