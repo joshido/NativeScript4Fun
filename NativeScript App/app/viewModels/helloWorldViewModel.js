@@ -1,8 +1,12 @@
-var observable = require('data/observable');
+var observable = require("data/observable");
 
 var viewModel = new observable.Observable();
 
-viewModel.name = '';
-viewModel.message = 'Hello';
+viewModel.set("name", "");
+viewModel.set("message", "Hello World!");
+
+viewModel.tapAction = function() {
+    viewModel.set("message", "Button clicked!");
+};
 
 exports.viewModel = viewModel;
