@@ -1,9 +1,12 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
-    <StackLayout>
-        <StackLayout orientation="horizontal">
-            <Label text="Name" />
-            <TextField text="{{ name }}" />
-        </StackLayout>
-        <Label text="{{ name === '' ? message + ' World!' : message + ' ' + name + '!'}}" cssClass="title" />
-    </StackLayout>
+	<StackLayout>
+		<Label text="Hello World App" cssClass="title" />
+		<StackLayout orientation="horizontal cssClass="message>
+			<Label text="Name" />
+			<TextField text="{{ name }}" />
+		</StackLayout>
+        <Label text="{{ message }}" cssClass="message"/>
+		<!-- Label cssClass="message" text="{{ !name ? message : 'Hello ' + name }}" / -->
+        <Button text="Show Weather" tap="{{ tapAction }}" />
+	</StackLayout>
 </Page>

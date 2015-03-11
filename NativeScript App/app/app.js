@@ -1,3 +1,3 @@
 var application = require("application");
-application.mainModule = "app/views/helloWorld";
+application.mainModule = "app/views/weather";
 application.start();

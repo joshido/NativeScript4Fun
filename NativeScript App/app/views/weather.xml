@@ -1,0 +1,10 @@
+<Page loaded="pageLoaded">
+	<StackLayout>
+		<StackLayout>
+            <Label cssClass="message" text="{{ 'Location Service is enabled: ' + isEnabled }}" />
+			<Label cssClass="message" text="{{ 'Current Location: ' + location.latitude + ', ' + location.longitude }}" />
+            <Button text="Get Forecast" tap="{{ getForecastAction }}"/>
+            <Label cssClass="message multiline" text="{{ forecast }}" />
+		</StackLayout>
+	</StackLayout>
+</Page>
